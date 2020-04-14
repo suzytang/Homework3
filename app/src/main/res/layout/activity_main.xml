@@ -6,40 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
-        android:layout_marginBottom="134dp"
-        android:text="Generate"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quote" />
-
 
     <TextView
         android:id="@+id/quote"
-        android:layout_width="295dp"
-        android:layout_height="514dp"
+        android:layout_width="287dp"
+        android:layout_height="554dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/chivo"
         android:gravity="center"
         android:text="Click on the button to generate an inspirational quote!"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/sparkButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:sparkbutton_activeImage="@drawable/button_yellow"
+        app:sparkbutton_iconSize="70dp"
+        app:sparkbutton_primaryColor="@color/primary_color"
+        app:sparkbutton_secondaryColor="@color/secondary_color" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
